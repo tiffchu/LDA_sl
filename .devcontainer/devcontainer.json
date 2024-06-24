@@ -1,0 +1,14 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "Python Streamlit App",
+    "image": "python:3.11-slim",
+    "extensions": [
+        "ms-python.python"
+    ],
+    "runArgs": ["-u", "root"],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "appPort": [8501],
+    "postCreateCommand": "pip install -r requirements.txt"
+}
